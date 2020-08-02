@@ -1,0 +1,48 @@
+#title {
+    text-align: center;
+}
+
+#game_container {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#character {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 180px;
+}
+
+#enemy {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 160px;
+    left: 480px;
+    /* infinite - allows the animation to continue running */
+    /* linear - makes the movement even across the screen */
+    /* 2s - time it takes to move across the screen (the lower the number the faster it will move) */
+    animation: enemy_moves 2s infinite linear;
+}
+
+/* adding a class with the animation so we can add or remove the class to the character using js */
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes enemy_moves {
+    0% { left: 480px; }
+    100% { left: 0px; }
+}
+
+@keyframes jump {
+    0% { top: 180px; }
+    35% { top: 100px; }
+    65% { top: 100px; }
+    100% { top: 180px; }
+}

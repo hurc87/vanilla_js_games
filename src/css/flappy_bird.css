@@ -1,0 +1,23 @@
+#game_container {
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+#character {
+    height: 35px;
+    width: 35px;
+    background-color: pink;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+
+#ground {
+    height: 80px;
+    width: 600px;
+    position: absolute;
+    top: 430px;
+    background-color: purple;
+}

@@ -15,6 +15,7 @@ Learning notes can be found using the following two links which were created usi
 * There is a main character in the game who can jump but also has gravity applied to it.
 * The character is not allowed to touch the ground or the game is over. 
 * There are enemy blocks which move towards the character.
+* The enemy blocks change height each time they pass.
 * The character is not allowed to touch the enemy blocks.
 * The character scores a point for each successful time they manage to jump through the enemy blocks. 
 * The game must finish and animations stop if the character hits either the block or ground with the score being displayed with a 'game over' message. 

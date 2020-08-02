@@ -1,8 +1,10 @@
 #game_container {
     height: 500px;
     width: 600px;
+    position: relative;
     margin: auto;
     border: 1px solid black;
+    overflow: hidden;
 }
 
 #character {
@@ -14,10 +16,28 @@
     top: 200px;
 }
 
+#enemy_block_1 {
+    height: 200px;
+    width: 35px;
+    background-color: lightblue;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+}
+
+#enemy_block_2 {
+    height: 200px;
+    width: 35px;
+    background-color: lightblue;
+    position: absolute;
+    top: -50px;
+    left: 600px;
+}
+
 #ground {
     height: 80px;
     width: 600px;
     position: absolute;
-    top: 430px;
+    top: 420px;
     background-color: purple;
 }

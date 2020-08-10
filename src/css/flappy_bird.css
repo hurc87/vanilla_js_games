@@ -17,7 +17,7 @@
 }
 
 #enemy_block_1 {
-    height: 200px;
+    height: 400px;
     width: 35px;
     background-color: lightblue;
     position: absolute;
@@ -26,11 +26,11 @@
 }
 
 #enemy_block_2 {
-    height: 200px;
+    height: 400px;
     width: 35px;
     background-color: lightblue;
     position: absolute;
-    top: -50px;
+    top: -250px;
     left: 600px;
 }
 

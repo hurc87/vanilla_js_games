@@ -1,6 +1,3 @@
-// * The user can press a button to restart the game.
-// * The user can select a theme which will change the character / background / ground / enemy blocks 
-
 const startGame = () => {
 
     const character = document.getElementById('character')
@@ -21,7 +18,7 @@ const startGame = () => {
         enemy_1.style.left = enemy_1_left - 3 + 'px'
         enemy_2.style.left = enemy_1_left - 3 + 'px'
 
-        if ((characterBottom < 85) || ( ( enemy_1_left < 190 && enemy_1_left > 120 ) && ( ( ( (characterBottom + 35) > enemy_2_bottom ) || ( (characterTop + 35) > enemy_1_top  ) ) ) )) {
+        if ((characterBottom < 80) || ( ( enemy_1_left < 190 && enemy_1_left > 120 ) && ( ( ( (characterBottom + 30) > enemy_2_bottom ) || ( (characterTop + 30) > enemy_1_top  ) ) ) )) {
             gameOver()
         }
 
@@ -56,9 +53,32 @@ const startGame = () => {
     }, 100)
 
     const gameOver = () => {
-        alert('Game Over! Your score is: ' + score + '! Refresh your page to play again')
+        alert('Game Over! Your score is: ' + score)
         clearInterval(gamePlay)
     }
+}
+
+const setFlappyBird = () => {
+    document.getElementById('character').style.backgroundColor = "#71C5D0"
+    document.getElementById('character').style.backgroundImage = 'url("./images/flappy-bird.png")'
+    document.getElementById('enemy_block_1').style.backgroundImage = 'url("./images/flappybird-pipe.png")'
+    document.getElementById('enemy_block_2').style.backgroundImage = 'url("./images/flappybird-pipe.png")'
+    document.getElementById('ground').style.backgroundImage = 'url("./images/bottom-background.png")'
+    document.getElementById('game_container').style.backgroundImage = 'url("./images/fb-game-background.png")'
+}
+
+const setFlappyBirdTwo = () => {
+    document.getElementById('character').style.backgroundColor = "pink"
+    document.getElementById('character').style.backgroundImage = 'url("./images/flappy-bird.png")'
+    document.getElementById('enemy_block_1').style.backgroundImage = 'url("./images/flappybird-pipe.png")'
+    document.getElementById('enemy_block_2').style.backgroundImage = 'url("./images/flappybird-pipe.png")'
+    document.getElementById('ground').style.backgroundImage = 'url("./images/bottom-background.png")'
+    document.getElementById('game_container').style.backgroundColor = 'pink'
+    document.getElementById('game_container').style.backgroundImage = ''
+}
+
+const refreshGame = () => {
+    location.reload()
 }
 
 startGame()

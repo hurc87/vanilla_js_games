@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="./src/css/flappy_bird.css">
 </head>
 <body>
+    <div class="themes">
+        <h1>Select A Colour Theme or Restart the Game</h1>
+        <button class="themeButtons" onclick="setFlappyBird()">Flappy Bird Blue</button>
+        <button class="themeButtons" onclick="setFlappyBirdTwo()">Flappy Bird Pink</button>
+        <button class="restartButton" onclick="refreshGame()">Restart Game</button>
+    </div>
     <div id="game_container">
         <div id="character"></div>
         <div id="enemy_block_1"></div>

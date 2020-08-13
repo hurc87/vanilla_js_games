@@ -1,0 +1,33 @@
+#game_container {
+    text-align: center;
+}
+
+#letter_container {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.letters {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.letters:hover {
+    border: 1px solid purple;
+    color: black;
+    background-color: orchid;
+}
+
+.letters:disabled {
+    background-color: lightgrey;
+    color: grey;
+    border: 1px solid darkgrey;
+    cursor: default;
+}

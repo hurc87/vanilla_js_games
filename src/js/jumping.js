@@ -17,7 +17,7 @@ const gameOver = () => {
 
             if ( enemyLeft < 20 && enemyLeft > 0 && characterTop >=180 ) {
                 enemy.style.animation = 'none'
-                alert('Game Over, refresh to restart the game')
+                alert('Game Over!')
             }
 
         }, 10
@@ -29,5 +29,9 @@ document.addEventListener('keydown', (event) => {
         jump()
     }
 })
+
+const refreshGame = () => {
+    location.reload()
+}
 
 gameOver()

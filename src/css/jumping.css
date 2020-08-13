@@ -35,6 +35,10 @@
     animation: jump 500ms;
 }
 
+.restartButton {
+    margin: 20px;
+}
+
 @keyframes enemy_moves {
     0% { left: 480px; }
     100% { left: 0px; }

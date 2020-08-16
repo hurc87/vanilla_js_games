@@ -2,12 +2,20 @@
     text-align: center;
 }
 
+#game {
+    display: flex;
+    flex-wrap: wrap;
+    width: 950px;
+    margin: auto;
+}
+
 #letter_container {
     border: 1px solid black;
     border-radius: 10px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
+    width: 400px;
 }
 
 .letters {
@@ -30,4 +38,37 @@
     color: grey;
     border: 1px solid darkgrey;
     cursor: default;
+}
+
+#word_container {
+    height: 50px;
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.correct_guess {
+    width: 15px;
+    text-decoration: underline;
+    margin: 5px;
+}
+
+.word_template {
+    width: 15px;
+    border-bottom: 1px solid black;
+    margin: 5px;
+}
+
+#hangman_container {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10px;
+    /* background-image: url('../../images/hangman.png'); */
 }

@@ -40,6 +40,19 @@
     cursor: default;
 }
 
+#getWord {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer; 
+}
+
+#getWord:hover {
+    background-color: orchid;
+}
+
 #word_container {
     height: 50px;
     width: 400px;

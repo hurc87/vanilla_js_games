@@ -10,6 +10,7 @@
         <div>
             <h1>Hangman</h1>
         </div>
+        <!-- <button id="getWord" onclick="getWord()"><h3>Get a new word</h3></button> -->
         <div id="game">
             <div id="words">
                 <div id="word_container"></div>
@@ -42,7 +43,9 @@
                     <button id="Z" class="letters" onclick=guess(id)><h2>Z</h2></button>
                 </div>
             </div>
-            <div id="hangman_container"></div>
+            <div id="hangman_container">
+                <button id="getWord" onclick="getWord()"><h3>Get a new word</h3></button>
+            </div>
         </div>
     </div>
     <script src="./src/js/hangman.js"></script>

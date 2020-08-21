@@ -1,0 +1,39 @@
+#game_container {
+    text-align: center;
+}
+
+#game {
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+
+#hero {
+    width: 20px;
+    height: 20px;
+    border: 1px solid pink;
+    background-color: pink;
+    position: relative;
+    top: 460px;
+    left: 240px;
+    z-index: +1;
+}
+
+.shot {
+    width: 5px;
+    height: 20px;
+    background-color: yellow;
+    position: relative;
+    /* animation: shot_up 2s infinite linear; */
+}
+
+/* @keyframes shot_up {
+    0% { top: 450px; }
+    20% { top: 368px; }
+    40% { top: 276px; }
+    60% { top: 184px; }
+    80% { top: 92px; }
+    100% { top: -20px; }
+} */

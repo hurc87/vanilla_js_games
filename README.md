@@ -24,7 +24,7 @@ Learning notes can be found using the following two links which were created usi
 
 ## Hangman
 
-The user has to guess a word by selecting letters which may or may not be in the word. If a wrong letter is selected then an image on the hangman will be displayed, if all the hangman image is displayed the user loses the game. After each succesful guess a letter will appear as it would in the word, if the user guess all the letters correctly, they win! 
+The user has to guess a word by selecting letters which may or may not be in the word. If a wrong letter is selected then an image on the hangman will be displayed, if all the hangman image is displayed the user loses the game. After each successful guess a letter will appear as it would in the word, if the user guess all the letters correctly, they win! 
 
 ### Breaking down into steps / user stories
 * All the letters of the alphabet are represented as buttons.
@@ -35,3 +35,16 @@ The user has to guess a word by selecting letters which may or may not be in the
 * When all the hangman is displayed the game is over and the word is displayed.
 * When all the word is displayed through successful guesses the game is won.
 * A user can restart the game at any time.
+
+## Space Invaders
+
+The user plays a hero character which can move left or right and shoots upwards towards the approaching enemy. The enemy characters move left to right, then down a row until they reach the bottom. If they reach the bottom the game is over and the user loses, however if the hero shoots all enemy characters the user wins. 
+
+### Breaking down into steps / user stories
+* The hero character can move left or right dependant on the direction the user selects.
+* The hero character will shoot upwards repeatedly from the start of the game.
+* The enemy characters move left and right on their own.
+* When the enemy character gets to each edge it will drop down a row. 
+* If the user successfully shoots one of the enemy characters, they will disappear. 
+* If the user shoots all of the enemy characters - they win. 
+* If the enemy character gets to the bottom - the user loses. 

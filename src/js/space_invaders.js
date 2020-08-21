@@ -7,6 +7,7 @@
 
 const hero = document.getElementById('hero')
 const gameGrid = document.getElementById('game')
+let gameOver = false
 
 const moveLeft = () => {
     const currentSpace = parseInt(window.getComputedStyle(hero).getPropertyValue('left'))

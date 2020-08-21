@@ -57,24 +57,24 @@ const startGame = () => {
 
     const fireAShot = () => {
         let startingPoint = parseInt(document.getElementsByClassName('hero')[0].id)
-        // console.log(startingPoint, 'starting point')
+        let shooterStartingPoint = startingPoint
 
         const shoot = () => {
 
-            if (startingPoint > 0) {
-                document.getElementById(startingPoint).classList.remove('shot')
-                document.getElementById(startingPoint - 11).classList.add('shot')
-                console.log(startingPoint, 'starting point 2')
-                startingPoint = startingPoint - 11
+            if (shooterStartingPoint > 0) {
+                document.getElementById(shooterStartingPoint).classList.remove('shot')
+                document.getElementById(shooterStartingPoint - 11).classList.add('shot')
+                shooterStartingPoint = shooterStartingPoint - 11
+
+                if (shooterStartingPoint < 11) {
+                    clearInterval(shotDirection)
+                    setTimeout(() => {
+                        document.getElementById(shooterStartingPoint).classList.remove('shot')
+                    }, 100)
+                }
             }
         }
-
         var shotDirection = setInterval(shoot, 100)
-
-        if (startingPoint < 10) {
-            clearInterval(shotDirection)
-        }
-
     }
 
     var keepShooting = setInterval(fireAShot, 200)
